@@ -7,6 +7,11 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@catppuccin/palette'),
+    require('@catppuccin/tailwindcss')({
+      defaultFlavour: 'mocha',
+    }),
+  ],
 }
 
